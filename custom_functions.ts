@@ -15,6 +15,7 @@ namespace CodeCosmos {
     //% block="startingPosition x:$x y:$y z:$z"
     //% block.loc.nl="zetKlaar x:$x y:$y z:$z"
     export function startingPosition(x:number, y:number, z:number) {
+        player.execute("function levels/startingPositions");
         agent.teleport(world(x, y, z), EAST);
     }
 
