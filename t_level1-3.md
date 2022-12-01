@@ -1,6 +1,6 @@
 ### @hideIteration true
 ### @flyoutOnly true
-# Missie 5 (v1.0)
+# Missie 5 (v1.1)
 ```blocks
 player.onChat("jump", function () {
     CodeCosmos.startingPosition(world(0, 0, 0))
