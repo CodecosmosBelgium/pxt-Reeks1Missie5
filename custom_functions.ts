@@ -19,5 +19,11 @@ namespace CodeCosmos {
         agent.teleport(world(x, y, z), EAST);
     }
 
+    //% block="detectSandstone"
+    //% block.loc.nl="detecteerZandsteen"
+    export function detectSandstone() {
+        return blocks.testForBlock(RED_SANDSTONE, world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z)))
+    }
+
     
 }
