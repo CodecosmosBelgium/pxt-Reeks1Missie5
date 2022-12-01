@@ -12,17 +12,17 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="startingPosition x:$x y:$y z:$z"
-    //% block.loc.nl="zetKlaar x:$x y:$y z:$z"
-    export function startingPosition(x:number, y:number, z:number) {
+    //% block="startingPosition position:$position"
+    //% block.loc.nl="zetKlaar positie:$position"
+    export function startingPosition(position:Position) {
         player.execute("function levels/startingPositions");
-        agent.teleport(world(x, y, z), EAST);
+        agent.teleport(position, EAST);
     }
 
-    //% block="detectSandstone"
-    //% block.loc.nl="detecteerZandsteen"
-    export function detectSandstone() {
-        return blocks.testForBlock(RED_SANDSTONE, world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z)))
+    //% block="position below agent"
+    //% block.loc.nl="positie onder agent"
+    export function positionBelowAgent() {
+        return world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
     }
 
     

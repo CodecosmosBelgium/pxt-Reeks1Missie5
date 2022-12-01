@@ -1,3 +1,4 @@
 player.onChat("run", function () {
-    CodeCosmos.startingPosition(0, 0, 0)
+    blocks.place(GRASS, CodeCosmos.positionBelowAgent())
+    CodeCosmos.startingPosition(world(0, 0, 0))
 })
