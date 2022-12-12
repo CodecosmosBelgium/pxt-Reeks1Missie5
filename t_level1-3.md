@@ -10,6 +10,7 @@ player.onChat("jump", function () {
         agent.move(FORWARD, 1)
         agent.turn(LEFT_TURN)
     }
+        for (let index = 0; index < 4; index++) {}
 })
 
 ```
