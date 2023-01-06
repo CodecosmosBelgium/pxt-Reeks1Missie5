@@ -8,7 +8,7 @@ namespace CodeCosmos {
     }
 
     //% block="position below agent"
-    //% block.loc.nl="positie onder agent"
+    //% block.loc.nl_NL="positie onder agent"
     export function positionBelowAgent() {
         return world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
     }
