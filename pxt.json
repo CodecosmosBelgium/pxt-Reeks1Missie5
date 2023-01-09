@@ -11,7 +11,8 @@
         "main.ts",
         "custom_functions.ts",
         "t_level1-3.md",
-        "t_no-exercise.md"
+        "t_no-exercise.md",
+        "_locales/nl/t_level1-3.md"
     ],
     "testFiles": [
         "test.ts"
@@ -24,5 +25,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
