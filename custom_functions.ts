@@ -10,6 +10,5 @@ namespace CodeCosmos {
     export function positionBelowAgent() {
         return world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
     }
-
     
 }

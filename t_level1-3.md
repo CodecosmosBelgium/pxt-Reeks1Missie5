@@ -5,6 +5,7 @@
 player.onChat("jump", function () {
     CodeCosmos.startingPosition(world(0, 0, 0))
     blocks.place(GRASS, CodeCosmos.positionBelowAgent())
+    blocks.place(GRASS, agent.getPosition())
     while (blocks.testForBlock(RED_SANDSTONE, world(0, 0, 0))) {
         blocks.place(GRASS, world(0, 0, 0))
         agent.move(FORWARD, 1)
