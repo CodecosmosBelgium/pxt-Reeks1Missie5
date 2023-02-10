@@ -3,7 +3,7 @@
 # Missie 5 (v1.1)
 ```blocks
 player.onChat("jump", function () {
-agent.getPosition();
+agent.getPosition()
     CodeCosmos.startingPosition(world(0, 0, 0))
     blocks.place(GRASS, CodeCosmos.positionBelowAgent())
     blocks.place(GRASS, agent.getPosition())
