@@ -4,8 +4,8 @@
 ```blocks
 player.onChat("jump", function () {
 agent.getPosition()
-    CodeCosmos.startingPosition(world(0, 0, 0))
-    blocks.place(GRASS, CodeCosmos.positionBelowAgent())
+    CodeCosmosEN.startingPosition(world(0, 0, 0))
+    blocks.place(GRASS, CodeCosmosEN.positionBelowAgent())
     blocks.place(GRASS, agent.getPosition())
     while (blocks.testForBlock(RED_SANDSTONE, world(0, 0, 0))) {
         blocks.place(GRASS, world(0, 0, 0))
@@ -19,10 +19,9 @@ agent.getPosition()
 
 ```template
 player.onChat("level1", function() {
-    CodeCosmos.startingPosition(world(0, 0, 0))
+    CodeCosmosEN.startingPosition(world(0, 0, 0))
 })
 ```
 
 ## Velden bouwen
-
-Gebruik het leerplatform om de oefeningen op te lossen.
+Use the learning platform to solve the exercise.

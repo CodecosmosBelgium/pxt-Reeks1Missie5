@@ -3,8 +3,10 @@
 # Missie 5 (v1.1)
 ```blocks
 player.onChat("jump", function () {
+agent.getPosition()
     CodeCosmos.startingPosition(world(0, 0, 0))
     blocks.place(GRASS, CodeCosmos.positionBelowAgent())
+    blocks.place(GRASS, agent.getPosition())
     while (blocks.testForBlock(RED_SANDSTONE, world(0, 0, 0))) {
         blocks.place(GRASS, world(0, 0, 0))
         agent.move(FORWARD, 1)
@@ -17,7 +19,7 @@ player.onChat("jump", function () {
 
 ```template
 player.onChat("level1", function() {
-    
+    CodeCosmos.startingPosition(world(0, 0, 0))
 })
 ```
 
